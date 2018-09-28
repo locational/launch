@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Launchaco</title>
+    <meta charSet="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="">
+    <meta property="og:image" content="">
+    <link rel="shortcut icon" href="images/3324529b-1412-4431-9d83-adb4851f5d36.ico" />
+
+
+    <script>
+      (function(i, s, o, g, r, a, m)
+      {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function()
+        {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-124800245-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/color.css">
+
+    <script type="text/javascript">
+      (function(e, a)
+      {
+        if (!a.__SV)
+        {
+          var b = window;
+          try
+          {
+            var c, l, i, j = b.location,
+              g = j.hash;
+            c = function(a, b)
+            {
+              return (l = a.match(RegExp(b + "=([^&]*)"))) ? l[1] : null
+            };
+            g && c(g, "state") && (i = JSON.parse(decodeURIComponent(c(g, "state"))), "mpeditor" === i.action && (b.sessionStorage.setItem("_mpcehash", g), history.replaceState(i.desiredHash || "", e.title, j.pathname + j.search)))
+          }
+          catch (m)
+          {}
+          var k, h;
+          window.mixpanel = a;
+          a._i = [];
+          a.init = function(b, c, f)
+          {
+            function e(b, a)
+            {
+              var c = a.split(".");
+              2 == c.length && (b = b[c[0]], a = c[1]);
+              b[a] = function()
+              {
+                b.push([a].concat(Array.prototype.slice.call(arguments,
+                  0)))
+              }
+            }
+            var d = a;
+            "undefined" !== typeof f ? d = a[f] = [] : f = "mixpanel";
+            d.people = d.people || [];
+            d.toString = function(b)
+            {
+              var a = "mixpanel";
+              "mixpanel" !== f && (a += "." + f);
+              b || (a += " (stub)");
+              return a
+            };
+            d.people.toString = function()
+            {
+              return d.toString(1) + ".people (stub)"
+            };
+            k = "disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+            for (h = 0; h < k.length; h++) e(d, k[h]);
+            a._i.push([b, c, f])
+          };
+          a.__SV = 1.2;
+          b = e.createElement("script");
+          b.type = "text/javascript";
+          b.async = !0;
+          b.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === e.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";
+          c = e.getElementsByTagName("script")[0];
+          c.parentNode.insertBefore(b, c)
+        }
+      })(document, window.mixpanel || []);
+      mixpanel.init("3c24578bd024d4878b29a83e38bfbbf4");
+    </script>
+
+    <style>
+    </style>
+  </head>
+
+  <body class="font-neutral">
+    <div class="peach-black">
+      <header class="header">
+        <div class="container-lrg">
+          <div class="flex col-12 spread">
+            <a href="/" class="logo logo">
+              <img src="images/c9cdf491-89b4-4257-b80c-5b50b6114fea.png" alt="LocationalCompany Logo">
+            </a>
+            <a href="#main-menu" id="menu" class="menu-toggle">
+              <b class="nav-link mr0 secondary-color">☰</b>
+            </a>
+            <nav id="main-menu" role="navigation" class="main-menu">
+              <a href="#" id="main-menu-close" class="menu-close">
+                <span class="bold">✕</span>
+              </a>
+              <a href="/Spatial prediction" class="nav-link secondary-color">Spatial prediction</a>
+              <a href="/Building classification" class="nav-link secondary-color">Building classification</a>
+              <a href="/Smart heatmaps" class="nav-link secondary-color">Smart heatmaps</a>
+              <a href="mailto:hello@locational.io" class="nav-link secondary-color">Contact</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <section class="section">
+        <div class="container-lrg flex">
+          <div class="col-6 flex flex-column center-vertical mobile-text-center mb40">
+            <h1 class="heading-lrg primary-color">Smart heatmaps</h1>
+            <h2 class="subheading secondary-color mt20">Given locations of individual events (e.g. tweets, disease cases, crimes), with coordinates recorded in decimal degrees, this algorithm will generate density 'heat maps' that reflect the number of events per person.
+            </h2>
+            <div class="mt40">
+              <a href="https://ppls.shinyapps.io/demo-rate-density/" target="_blank" class="button mobile-text-center mt10 mobile-text-center accent-bg primary-color">
+                <span> Try it out </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-6 flex center-horizontal center-vertical">
+            <div class="launchaco-builder-hoverable">
+              <div class="">
+                <img src="images/7094cc2b-52ee-4744-a8e7-5ffa37213b3b.png" alt="Screenshot of small App" class="custom-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </body>
+
+</html>
