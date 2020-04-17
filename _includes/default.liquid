@@ -1,0 +1,56 @@
+---
+title: Locational project output
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locational: {{ title }}</title>
+  <link rel="stylesheet" href="https://unpkg.com/picnic">
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body>
+
+  <nav>
+    <div style='flex-grow: 1;'>
+      <strong>{{title}}</strong>
+    </div>
+    <div id="close-fullscreen" style='flex-grow: 1;'>Close fullscreen</div>
+  </nav>
+  <div id="app">
+    <section>
+      {{ content }}
+    </section>
+  </div>
+  <footer id='footer'>
+    <a href="https://www.locational.io">Locational</a>
+  </footer>
+
+  <script defer type='text/javascript' src='/assets/app.js' />
+
+  <!-- Matomo -->
+  <script type="text/javascript">
+    var _paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function () {
+      var u = "https://locational.matomo.cloud/";
+      _paq.push(['setTrackerUrl', u + 'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+      g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = '//cdn.matomo.cloud/locational.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g, s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+nav, footer {
+  background: #efefef;
+}
+
+nav {
+  height: 40px;
+  padding-top: 7px;
+  display: flex;
+}
+
+nav #close-fullscreen {
+  cursor: pointer;
+  text-align: right;
+  color: red;
+  display: none;
+  font-size: 0.75em;
+  margin-top: 4px;
+  margin-right: 10px;
+}
+
+footer {
+  position: fixed;
+  height: 26px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+  font-size: 0.8em;
+  padding-left: 8px;
+  padding-top: 2px;
+  color: #5f5f5f;
+}
+
+.fullscreen-btn {
+  font-size: .75em;
+  float: right;
+}
+
+#app {
+  padding: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+#app iframe {
+  width: 100%;
+  min-height: 400px;
+  border: 1px dashed #eee;
+}
+
+#app iframe.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  overflow: hidden;
+  z-index: 999999;
+}
